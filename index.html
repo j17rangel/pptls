@@ -1,125 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-18"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Piedra, Papel, Tijera, Lagarto, Spock</title>
-        <link rel="stylesheet" type="text/css" href="./asset/css/styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
-        <script src="./asset/js/script.js"></script>
-    </head>
-    <body>
-        <div class="ventana-1">
-            <section id="titulo">
-                <h1>PIEDRA PAPEL TIJERA LAGARTO SPOCK</h1>
-            </section>
-        </div>
-        <div class="ventana-2"> 
-            <section id="elegir-personaje" class="container-1">
-                <h2>Elige tu personaje</h2>
-                <div class="botones-personaje">
-                    <input type="radio" name="personaje" id="sheldon"/>
-                    <label for="sheldon">
-                        <img src="./asset/images/sheldon.png" alt="" class="avatares">
-                        <p>Sheldon</p>
-                    </label>
-                    <input type="radio" name="personaje" id="leonard"/>
-                    <label for="leonard">
-                        <img src="./asset/images/leonard.png" alt="" class="avatares">
-                        <p>Leonard</p>
-                    </label>
-                    <input type="radio" name="personaje" id="rajesh"/>
-                    <label for="rajesh">
-                        <img src="./asset/images/rajesh.png" alt="" class="avatares">
-                        <p>Rajesh</p>
-                    </label>
-                    <input type="radio" name="personaje" id="howard"/>
-                    <label for="howard">
-                        <img src="./asset/images/howard.png" alt="" class="avatares">
-                        <p>Howard</p>
-                    </label>
-                    <input type="radio" name="personaje" id="penny"/>
-                    <label for="penny">
-                        <img src="./asset/images/penny.png" alt="" class="avatares">
-                        <p>Penny</p>
-                    </label>
-                    <input type="radio" name="personaje" id="bernadette"/>
-                    <label for="bernadette" class="labell">
-                        <img src="./asset/images/bernaddeted.png" alt="" class="avatares">
-                        <p>Bernadette</p>
-                    </label>
+
+<head>
+    <meta charset="utf-18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Piedra, Papel, Tijera, Lagarto, Spock</title>
+    <link rel="stylesheet" type="text/css" href="./asset/css/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <script src="./asset/js/script.js"></script>
+</head>
+
+<body>
+    <div class="ventana-1">
+        <section id="titulo">
+            <h1>PIEDRA PAPEL TIJERA LAGARTO SPOCK</h1>
+        </section>
+    </div>
+    <div class="ventana-2">
+        <section id="elegir-personaje" class="container-1">
+            <h2>Elige tu personaje</h2>
+            <div class="botones-personaje">
+                <input type="radio" name="personaje" id="sheldon" />
+                <label for="sheldon">
+                    <img src="./asset/images/sheldon.png" alt="" class="avatares">
+                    <p>Sheldon</p>
+                </label>
+                <input type="radio" name="personaje" id="leonard" />
+                <label for="leonard">
+                    <img src="./asset/images/leonard.png" alt="" class="avatares">
+                    <p>Leonard</p>
+                </label>
+                <input type="radio" name="personaje" id="rajesh" />
+                <label for="rajesh">
+                    <img src="./asset/images/rajesh.png" alt="" class="avatares">
+                    <p>Rajesh</p>
+                </label>
+                <input type="radio" name="personaje" id="howard" />
+                <label for="howard">
+                    <img src="./asset/images/howard.png" alt="" class="avatares">
+                    <p>Howard</p>
+                </label>
+                <input type="radio" name="personaje" id="penny" />
+                <label for="penny">
+                    <img src="./asset/images/penny.png" alt="" class="avatares">
+                    <p>Penny</p>
+                </label>
+                <input type="radio" name="personaje" id="bernadette" />
+                <label for="bernadette" class="labell">
+                    <img src="./asset/images/bernaddeted.png" alt="" class="avatares">
+                    <p>Bernadette</p>
+                </label>
+            </div>
+            <button id="selec-personaje">Comenzar</button>
+        </section>
+        <div id="parte-2" class="container-2" style="display: none;">
+            <section id="elegir-ataque">
+                <h2 class="titulo-parte-2">Elige tu Ataque</h2>
+                <div id="botones-ataque">
+                    <button id="selec-piedra">
+                        <img src="./asset/images/piedra.png" alt="" class="ataques">
+                        <p>Piedra</p>
+                    </button>
+                    <button id="selec-papel">
+                        <img src="./asset/images/papel.png" alt="" class="ataques">
+                        <p>Papel</p>
+                    </button>
+                    <button id="selec-tijera">
+                        <img src="./asset/images/tijeras.png" alt="" class="ataques">
+                        <p>Tijera</p>
+                    </button>
+                    <button id="selec-lagarto">
+                        <img src="./asset/images/lagarto.png" alt="" class="ataques">
+                        <p>Lagarto</p>
+                    </button>
+                    <button id="selec-spock">
+                        <img src="./asset/images/spock.png" alt="" class="ataques">
+                        <p>Spock</p>
+                    </button>
                 </div>
-                <button id="selec-personaje">Comenzar</button>
-            </section>  
-            <div id="parte-2" class="container-2" style="display: none;">
-                <section id="elegir-ataque">
-                    <h2 class="titulo-parte-2">Elige tu Ataque</h2>
-                    <div id="botones-ataque">
-                        <button id="selec-piedra">
-                            <img src="./asset/images/piedra.png" alt="" class="ataques">
-                            <p>Piedra</p>
-                        </button>
-                        <button id="selec-papel">
-                            <img src="./asset/images/papel.png" alt="" class="ataques">
-                            <p>Papel</p>
-                        </button>
-                        <button id="selec-tijera">
-                            <img src="./asset/images/tijeras.png" alt="" class="ataques">
-                            <p>Tijera</p>
-                        </button>
-                        <button id="selec-lagarto">
-                            <img src="./asset/images/lagarto.png" alt="" class="ataques">
-                            <p>Lagarto</p>
-                        </button>
-                        <button id="selec-spock">
-                            <img src="./asset/images/spock.png" alt="" class="ataques">
-                            <p>Spock</p>
-                        </button>
+            </section>
+            <section id="avisos">
+                <di class="vs-combate">
+                    <div id="vs-ataque-jugador" class="label-vs-ataques">
+                        <p>Tu</p>
+                        <img src="./asset/images/icognita.png" alt="" class="img-vs-ataques">
                     </div>
-                </section>
-                <section id="avisos">
-                    <di class="vs-combate">
-                        <div id="vs-ataque-jugador" class="label-vs-ataques">
-                            <p>Tu</p>
-                            <img src="./asset/images/icognita.png" alt="" class="img-vs-ataques">
-                        </div>
-                        VS
-                        <div id="vs-ataque-rival" class="label-vs-ataques">
-                            <p>Rival</p>
-                            <img src="./asset/images/icognita-2.png" alt="" class="img-vs-ataques">
-                        </div>
-                    </di>
-                    <div id="mensaje-batalla">
-                        <p id="mensaje1">-</p>
-                        <p id="mensaje2"></p>
+                    VS
+                    <div id="vs-ataque-rival" class="label-vs-ataques">
+                        <p>Rival</p>
+                        <img src="./asset/images/icognita-2.png" alt="" class="img-vs-ataques">
                     </div>
-                </section>      
-                <button id="reiniciar">Volver a Jugar</button>
-            </div>
-            </div>
-        <div class="ventana-3"> 
-            <div class="container-ventana-3">
-                <p id="vs">
+                </di>
+                <div id="mensaje-batalla">
+                    <p id="mensaje1">-</p>
+                    <p id="mensaje2"></p>
+                </div>
+            </section>
+            <button id="reiniciar">Volver a Jugar</button>
+        </div>
+    </div>
+    <div class="ventana-3">
+        <div class="container-ventana-3">
+            <p id="vs">
                 <label id="vs-personajes-jugador" class="label-vs-personajes">
                     <img src="./asset/images/icognita.png" alt="" class="vs-avatares">
-                    <span id="mascota-jugador" class="vs-nombre">Tu</span> 
+                    <span id="mascota-jugador" class="vs-nombre">Tu</span>
                     <span id="vida-jugador" class="vs-nombre">-</span>
                 </label>
                 VS
                 <label id="vs-personajes-rival" class="label-vs-personajes">
-                    <img src="./asset/images/icognita.png" alt="" class="vs-avatares"> 
+                    <img src="./asset/images/icognita.png" alt="" class="vs-avatares">
                     <span id="mascota-rival" class="vs-nombre">Rival</span>
                     <span id="vida-rival" class="vs-nombre">-</span>
                 </label>
-                </p> 
-                <div id="div-reglas-juego" class="reglas-juego"> 
+            </p>
+            <div id="reglas-container">
+                <div id="div-reglas-juego" class="reglas-juego">
                     <div class="container-reglas">
-                        <ul> 
-                            <li>Tijera cortan Papel</li> 
-                            <li>Papel cubre Piedra</li> 
+                        <ul>
+                            <li>Tijera cortan Papel</li>
+                            <li>Papel cubre Piedra</li>
                             <li>Piedra aplasta Lagarto</li>
                             <li>Lagarto envenena Spock</li>
                             <li>Spock destruye Tijera</li>
@@ -131,11 +134,13 @@
                         </ul>
                     </div>
                 </div>
-                <button id="boton-reglas"> 
-                    Reglas del Juego 
+                <button id="boton-reglas">
+                    <p>Reglas del Juego</p>
                     <span class="material-symbols-outlined">help</span>
                 </button>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
