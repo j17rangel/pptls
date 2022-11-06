@@ -522,7 +522,7 @@ div#reglas-container {
         padding: 10px;
         border-radius: 50px;
         background-color: #2F8886;
-        position: fixed;
+        position: absolute;
     }
 
     #boton-reglas p {
