@@ -1,7 +1,7 @@
-  let personajeJugador,
-    personajeEnemigo,
-    ataqueEnemigo,
-    ataqueJugador,
+  let personajeJugador = '',
+    personajeEnemigo = '',
+    ataqueEnemigo = '',
+    ataqueJugador = '',
     vidasJugador = 3,
     vidasRival = 3;
   const personajes = [
@@ -22,17 +22,14 @@
     ataquesTodos = ["PIEDRA", "PAPEL", "TIJERA", "LAGARTO", "SPOCK"];
 
   function iniciarJuego() {
-    ocultarMostrar("elegir-ataque", "none");
     ocultarMostrar("parte-2", "none");
-    document.getElementById("reiniciar").style.visibility = "hidden";
     let botonPersonajeJugador = document.getElementById("selec-personaje");
     botonPersonajeJugador.addEventListener("click", selecPersonajeJugador);
     seleccionJugador();
     desabilitarBotonAtaque(true)
     let botonReiniciar = document.getElementById("reiniciar");
-    botonReiniciar.addEventListener("click", () => {
-      location.reload();
-    });
+    botonReiniciar.style.visibility = "hidden";
+    botonReiniciar.addEventListener("click", reiniciarJuego);
     let botonReglasAbrir = document.getElementById("boton-reglas");
     let iconBotonReglas = document.querySelector("#boton-reglas span");
     if (window.innerWidth <= 450) {
@@ -69,10 +66,31 @@
       });
     }
   }
+  function reiniciarJuego(){
+    personajeJugador = '';
+    personajeEnemigo = '';
+    ataqueEnemigo = '';
+    ataqueJugador = '';
+    vidasJugador = 3;
+    vidasRival = 3;
+    document.getElementById("reiniciar").style.visibility = "hidden";
+    ocultarMostrar("parte-2", "none");
+    ocultarMostrar("elegir-personaje", "flex");
+    document.getElementById("mascota-jugador").innerHTML = "Tu";
+    document.querySelector("label[id='vs-personajes-jugador'] img").src = "./asset/images/icognita.png";
+    document.getElementById("vida-jugador").innerHTML = "-";
+    document.getElementById("mascota-rival").innerHTML = "Rival";
+    document.querySelector("label[id='vs-personajes-rival'] img").src = "./asset/images/icognita.png";
+    document.getElementById("vida-rival").innerHTML = "-";
+    document.querySelector("div[id='vs-ataque-jugador'] img").src = "./asset/images/icognita.png";
+    document.querySelector("div[id='vs-ataque-rival'] img").src = "./asset/images/icognita-2.png";
+    mensajes("-", "");
+    document.querySelector("#elegir-personaje input[type='radio']:checked").checked = false;
+  };
   function ocultarMostrar(id, valorDisplay) {
     let seccion = document.getElementById(id);
     seccion.style.display = valorDisplay;
-  }
+  };
   function desabilitarBotonAtaque(valor){
     let boton0 = document.getElementById(idAtaques[0]);
     boton0.disabled = valor;
@@ -110,7 +128,6 @@
       "#elegir-personaje input[type='radio']:checked"
     );
     if (jugador) {
-      ocultarMostrar("elegir-ataque", "block");
       ocultarMostrar("parte-2", "flex");
       ocultarMostrar("elegir-personaje", "none");
       let nombreJugador = jugador.attributes.id.value;
@@ -118,8 +135,7 @@
         `label[for='${nombreJugador}'] img`
       ).src;
       document.getElementById("mascota-jugador").innerHTML = nombreJugador;
-      document.querySelector("label[id='vs-personajes-jugador'] img").src =
-        imagenJugador;
+      document.querySelector("label[id='vs-personajes-jugador'] img").src = imagenJugador;
       personajeJugador = nombreJugador;
       document.getElementById("vida-jugador").innerHTML =
         '<i class="fi fi-ss-heart"></i><i class="fi fi-ss-heart"></i><i class="fi fi-ss-heart"></i>';
