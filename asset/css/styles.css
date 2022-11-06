@@ -405,7 +405,7 @@ div#reglas-container {
         height: 2vh;
         margin: 0;
         position: absolute;
-        top: 5vw;
+        top: 3vh;
         align-items: center;
     }
 
@@ -415,12 +415,12 @@ div#reglas-container {
         margin: 0;
         z-index: 2;
         position: absolute;
-        bottom: 20vw;
+        bottom: 13vh;
     }
 
     .ventana-3 {
         width: 90vw;
-        height: 26vh;
+        height: 22vh;
         margin: 0px;
         position: absolute;
         top: 5vh;
@@ -584,12 +584,12 @@ div#reglas-container {
     div#reglas-container {
         display: flex;
         width: 90vw;
-        height: 10vw;
+        height: 5vh;
         position: fixed;
         margin: 0;
         justify-content: center;
         z-index: 3;
         align-items: flex-end;
-        bottom: 5vw;
+        bottom: 3vh;
     }
 }
