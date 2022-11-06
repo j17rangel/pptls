@@ -401,32 +401,44 @@ div#reglas-container {
     }
 
     .ventana-1 {
-        width: 90%;
-        height: 10vh;
-        margin: 0px;
+        width: 90vw;
+        height: 2vh;
+        margin: 0;
+        position: absolute;
+        top: 5vw;
+        align-items: center;
     }
 
     .ventana-2 {
-        width: 90%;
+        width: 90vw;
         height: 60vh;
-        margin: 20px 0;
+        margin: 0;
         z-index: 2;
+        position: absolute;
+        bottom: 20vw;
     }
 
     .ventana-3 {
-        width: 90%;
-        height: 20vh;
+        width: 90vw;
+        height: 26vh;
         margin: 0px;
+        position: absolute;
+        top: 5vh;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 12px;
         text-align: center;
     }
 
     h2 {
         font-size: 15px;
         text-align: center;
+    }
+
+    .container-ventana-3 {
+        display: flex;
+        justify-content: center;
     }
 
     .container-1,
@@ -519,19 +531,11 @@ div#reglas-container {
 
     #boton-reglas {
         width: auto;
-        height: auto;
-        padding: 10px;
-        border-radius: 50px;
+        height: 100%;
+        padding: 10px 25px;
         background-color: #2F8886;
         position: absolute;
-    }
-
-    #boton-reglas p {
-        display: none;
-    }
-
-    #boton-reglas span {
-        margin: 0;
+        font-size: 12px;
     }
 
     #vs {
@@ -579,12 +583,13 @@ div#reglas-container {
 
     div#reglas-container {
         display: flex;
-        width: 90%;
-        height: 140px;
-        position: absolute;
+        width: 90vw;
+        height: 10vw;
+        position: fixed;
         margin: 0;
         justify-content: center;
         z-index: 3;
         align-items: flex-end;
+        bottom: 5vw;
     }
 }
