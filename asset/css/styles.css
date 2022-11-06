@@ -576,7 +576,7 @@ div#reglas-container {
     div#reglas-container {
         display: flex;
         width: 90%;
-        height: 20vh;
+        height: 140px;
         position: absolute;
         margin: 0;
         justify-content: center;
