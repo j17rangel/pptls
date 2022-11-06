@@ -424,6 +424,7 @@ div#reglas-container {
         margin: 0px;
         position: absolute;
         top: 5vh;
+        padding: 12px 0;
     }
 
     h1 {
@@ -554,7 +555,7 @@ div#reglas-container {
 
     .label-vs-personajes {
         width: 45%;
-        height: 140px;
+        height: 100%;
         padding: 10px;
     }
 
