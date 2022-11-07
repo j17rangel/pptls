@@ -562,8 +562,8 @@ div#reglas-container {
     }
 
     img.vs-avatares {
-        width: 80%;
-        margin: 0;
+        width: 75%;
+        margin: 0 0 7px;
     }
 
     #mascota-jugador,
