@@ -392,7 +392,7 @@ div#reglas-container {
 
 @media (max-width: 450px) {
     body {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: flex;
         text-align: center;
@@ -402,28 +402,28 @@ div#reglas-container {
 
     .ventana-1 {
         width: 90vw;
-        height: 2vh;
+        height: 2%;
         margin: 0;
         position: absolute;
-        top: 3vh;
+        top: 3%;
         align-items: center;
     }
 
     .ventana-2 {
         width: 90vw;
-        height: 60vh;
+        height: 60%;
         margin: 0;
         z-index: 2;
         position: absolute;
-        bottom: 10vh;
+        bottom: 10%;
     }
 
     .ventana-3 {
         width: 90vw;
-        height: 22vh;
+        height: 23%;
         margin: 0px;
         position: absolute;
-        top: 5vh;
+        top: 7%;
         padding: 12px 0;
     }
 
@@ -587,12 +587,12 @@ div#reglas-container {
     div#reglas-container {
         display: flex;
         width: 90vw;
-        height: 5vh;
+        height: 5%;
         position: fixed;
         margin: 0;
         justify-content: center;
         z-index: 3;
         align-items: flex-end;
-        bottom: 3vh;
+        bottom: 3%;
     }
 }
